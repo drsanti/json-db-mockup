@@ -1,10 +1,9 @@
-{
-  [
-    {"role": "admin", "name": "admin", "pass": "admin", "email": "admin@email.com"},
-    {"role": "manager1", "name": "manager1", "pass": "manager1", "email": "manager1@email.com"},
-    {"role": "manager2", "name": "manager2", "pass": "manager2", "email": "manager2@email.com"},
-    {"role": "operator1", "name": "operator1", "pass": "operator1", "email": "operator1@email.com"},
-    {"role": "operator2", "name": "operator2", "pass": "operator2", "email": "operator2@email.com"},
-    {"role": "developer", "name": "developer", "pass": "developer", "email": "developer@email.com"}
-  ]
-}
+[
+  {"role": "admin", "name": "admin", "pass": "admin", "email": "admin@email.com"},
+  {"role": "manager1", "name": "manager1", "pass": "manager1", "email": "manager1@email.com"},
+  {"role": "manager2", "name": "manager2", "pass": "manager2", "email": "manager2@email.com"},
+  {"role": "operator1", "name": "operator1", "pass": "operator1", "email": "operator1@email.com"},
+  {"role": "operator2", "name": "operator2", "pass": "operator2", "email": "operator2@email.com"},
+  {"role": "developer", "name": "developer", "pass": "developer", "email": "developer@email.com"}
+]
+
