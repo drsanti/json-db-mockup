@@ -1,4 +1,4 @@
-final userDatabaseJson = {
+{
   [
     {"role": "admin", "name": "admin", "pass": "admin", "email": "admin@email.com"},
     {"role": "manager1", "name": "manager1", "pass": "manager1", "email": "manager1@email.com"},
@@ -7,4 +7,4 @@ final userDatabaseJson = {
     {"role": "operator2", "name": "operator2", "pass": "operator2", "email": "operator2@email.com"},
     {"role": "developer", "name": "developer", "pass": "developer", "email": "developer@email.com"}
   ]
-};
+}
