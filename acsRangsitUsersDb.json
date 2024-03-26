@@ -1,9 +1,9 @@
 [
   {"role": "admin", "name": "admin", "pass": "admin", "email": "admin@email.com"},
   {"role": "dev", "name": "dev", "pass": "dev", "email": "dev@email.com"},
-  {"role": "admin", "name": "acsteam", "pass": "Acsg#2017", "email": ""},
-  {"role": "manager1", "name": "rid_northrangsit_m1", "pass": "P@ssw0rd", "email": ""},
-  {"role": "manager2", "name": "rid_northrangsit_m2", "pass": "P@ssw0rd", "email": ""},
-  {"role": "operator1", "name": "rid_northrangsit_o1", "pass": "P@ssw0rd", "email": ""},
-  {"role": "operator2", "name": "rid_northrangsit_o2", "pass": "P@ssw0rd", "email": ""}
+  {"role": "admin", "name": "acsteam", "pass": "Acsg#2017", "email": "email@email.com"},
+  {"role": "manager1", "name": "rid_northrangsit_m1", "pass": "P@ssw0rd", "email": "email@email.com"},
+  {"role": "manager2", "name": "rid_northrangsit_m2", "pass": "P@ssw0rd", "email": "email@email.com"},
+  {"role": "operator1", "name": "rid_northrangsit_o1", "pass": "P@ssw0rd", "email": "email@email.com"},
+  {"role": "operator2", "name": "rid_northrangsit_o2", "pass": "P@ssw0rd", "email": "email@email.com"}
 ]
