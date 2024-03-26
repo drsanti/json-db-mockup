@@ -1,8 +1,8 @@
 [
   {
-    role: 'admin',
-    name: 'admin',
-    pass: 'admin',
-    email: 'admin@email.com',
+    "role": 'admin',
+    "name": 'admin',
+    "pass": 'admin',
+    "email": 'admin@email.com',
   }
 ]
