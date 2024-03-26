@@ -1,0 +1,52 @@
+[
+  //** Admin */
+  User(
+    role: UserRole.admin,
+    name: 'admin',
+    pass: 'admin',
+    email: 'admin@email.com',
+  ),
+  //** Developer */
+  User(
+    role: UserRole.developer,
+    name: 'dev',
+    pass: 'dev',
+    email: 'dev@email.com',
+  ),
+
+  //** ACS */
+  User(
+    role: UserRole.manager1,
+    name: 'acsteam',
+    pass: 'Acsg#2017',
+    email: '',
+  ),
+
+  //** Management (Managers) */
+  User(
+    role: UserRole.manager1,
+    name: 'rid_northrangsit_m1',
+    pass: 'P@ssw0rd',
+    email: '',
+  ),
+  User(
+    role: UserRole.manager2,
+    name: 'rid_northrangsit_m2',
+    pass: 'P@ssw0rd',
+    email: '',
+  ),
+
+  //** Operators */
+  User(
+    role: UserRole.operator1,
+    name: 'rid_northrangsit_o1',
+    pass: 'P@ssw0rd',
+    email: '',
+  ),
+  User(
+    role: UserRole.operator2,
+    name: 'rid_northrangsit_o2',
+    pass: 'P@ssw0rd',
+    email: '',
+  ),
+]
