@@ -9,7 +9,7 @@
     "role": "dev",
     "name": "dev",
     "pass": "dev",
-    "email": "dev@email".com",
+    "email": "dev@email.com",
   },
   {
     "role": "admin",
