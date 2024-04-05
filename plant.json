@@ -10,42 +10,81 @@
               {
                 "name": "flow-rate",
                 "sensors": [
-                  { "type": "flow-rate", "name": "flow-rate-1", "min": 0, "max": 100, "unit": "m/s" },
-                  { "type": "flow-rate", "name": "flow-rate-2", "min": 0, "max": 100, "unit": "m/s" },
-                  { "type": "flow-rate", "name": "flow-rate-3", "min": 0, "max": 100, "unit": "m/s" },
-                  { "type": "flow-rate", "name": "flow-rate-4", "min": 0, "max": 100, "unit": "m/s" }
+                  {"type": "flow-rate", "name": "ฝายพับได้\n(1500 มม.)", "min": 0, "max": 100, "unit": "ลบ.ม./วินาที"},
+                  {
+                    "type": "flow-rate",
+                    "name": "ท่อระบายน้ำหลัก\n(400 มม.)",
+                    "min": 0,
+                    "max": 100,
+                    "unit": "ลบ.ม./วินาที"
+                  },
+                  {
+                    "type": "flow-rate",
+                    "name": "ท่อประปาส่วนภูมิภาค\n(200 มม.)",
+                    "min": 0,
+                    "max": 100,
+                    "unit": "ลบ.ม./วินาที"
+                  },
+                  {
+                    "type": "flow-rate",
+                    "name": "ท่อใช้ภายในโครงการ\n(1000 มม.)",
+                    "min": 0,
+                    "max": 100,
+                    "unit": "ลบ.ม./วินาที"
+                  },
+                  {
+                    "type": "flow-rate",
+                    "name": "ท่อเกษตรกรรม\n(1000 มม.)",
+                    "min": 0,
+                    "max": 100,
+                    "unit": "ลบ.ม./วินาที"
+                  },
+                  {
+                    "type": "flow-rate",
+                    "name": "ท่อประปาส่วนภูมิภาค\n(500 มม.)",
+                    "min": 0,
+                    "max": 100,
+                    "unit": "ลบ.ม./วินาที"
+                  },
+                  {
+                    "type": "flow-rate",
+                    "name": "ท่อประปาเทศบาล\n(200 มม.)",
+                    "min": 0,
+                    "max": 100,
+                    "unit": "ลบ.ม./วินาที"
+                  }
                 ]
               },
               {
                 "name": "flow-speed",
                 "sensors": [
-                  { "type": "flow-speed", "name": "flow-speed-1", "min": 0, "max": 100, "unit": "m/s" },
-                  { "type": "flow-speed", "name": "flow-speed-2", "min": 0, "max": 100, "unit": "m/s" },
-                  { "type": "flow-speed", "name": "flow-speed-3", "min": 0, "max": 100, "unit": "m/s" }
+                  {"type": "flow-speed", "name": "flow-speed-1", "min": 0, "max": 100, "unit": "ม./วินาที"}
                 ]
               },
               {
                 "name": "rainfall",
                 "sensors": [
-                  { "type": "rainfall", "name": "rainfall-1", "min": 0, "max": 100, "unit": "m/s" }
+                  {"type": "rainfall", "name": "ปริมาณน้ำฝน", "min": 0, "max": 100, "unit": "มม."}
                 ]
               },
               {
                 "name": "gate-level",
                 "sensors": [
-                  { "type": "gate-level", "name": "gate-level-1", "min": 0, "max": 100, "unit": "cm" }
+                  {"type": "gate-level", "name": "บานที่ 1", "min": 0, "max": 100, "unit": "ซม."},
+                  {"type": "gate-level", "name": "บานที่ 2", "min": 0, "max": 100, "unit": "ซม."},
+                  {"type": "gate-level", "name": "บานที่ 3", "min": 0, "max": 100, "unit": "ซม."},
                 ]
               },
               {
                 "name": "upstream-level",
                 "sensors": [
-                  { "type": "upstream-level", "name": "upstream-level-1", "min": 0, "max": 100, "unit": "cm" }
+                  {"type": "upstream-level", "name": "ระดับน้ำด้านหน้าฝาย", "min": 0, "max": 100, "unit": "ม.รทก."}
                 ]
               },
               {
                 "name": "downstream-level",
                 "sensors": [
-                  { "type": "downstream-level", "name": "downstream-level-1", "min": 0, "max": 100, "unit": "cm" }
+                  {"type": "downstream-level", "name": "ระดับน้ำด้านหลังฝาย", "min": 0, "max": 100, "unit": "ม.รทก."}
                 ]
               }
             ]
@@ -61,8 +100,8 @@
               {
                 "name": "flow-rate",
                 "sensors": [
-                  { "type": "flow-rate", "name": "flow-rate-1", "min": 0, "max": 100, "unit": "m/s" },
-                  { "type": "flow-rate", "name": "flow-rate-2", "min": 0, "max": 100, "unit": "m/s" }
+                  {"type": "flow-rate", "name": "flow-rate-1", "min": 0, "max": 100, "unit": "m/s"},
+                  {"type": "flow-rate", "name": "flow-rate-2", "min": 0, "max": 100, "unit": "m/s"}
                 ]
               }
             ]
@@ -78,8 +117,8 @@
               {
                 "name": "flow-rate",
                 "sensors": [
-                  { "type": "flow-rate", "name": "flow-rate-1", "min": 0, "max": 100, "unit": "m/s" },
-                  { "type": "flow-rate", "name": "flow-rate-2", "min": 0, "max": 100, "unit": "m/s" }
+                  {"type": "flow-rate", "name": "flow-rate-1", "min": 0, "max": 100, "unit": "m/s"},
+                  {"type": "flow-rate", "name": "flow-rate-2", "min": 0, "max": 100, "unit": "m/s"}
                 ]
               }
             ]
@@ -95,8 +134,8 @@
               {
                 "name": "flow-rate",
                 "sensors": [
-                  { "type": "flow-rate", "name": "flow-rate-1", "min": 0, "max": 100, "unit": "m/s" },
-                  { "type": "flow-rate", "name": "flow-rate-2", "min": 0, "max": 100, "unit": "m/s" }
+                  {"type": "flow-rate", "name": "flow-rate-1", "min": 0, "max": 100, "unit": "m/s"},
+                  {"type": "flow-rate", "name": "flow-rate-2", "min": 0, "max": 100, "unit": "m/s"}
                 ]
               }
             ]
