@@ -10,8 +10,20 @@
               {
                 "name": "flow-rate",
                 "sensors": [
-                  {"type": "flow-rate", "name": "flow-rate-1", "min": 0, "max": 100, "unit": "m/s"},
-                  {"type": "flow-rate", "name": "flow-rate-2", "min": 0, "max": 100, "unit": "m/s"}
+                  {
+                    "type": "flow-rate",
+                    "name": "flow-rate-1",
+                    "min": 0,
+                    "max": 100,
+                    "unit": "m/s",
+                  },
+                  {
+                    "type": "flow-rate",
+                    "name": "flow-rate-2",
+                    "min": 0,
+                    "max": 100,
+                    "unit": "m/s",
+                  }
                 ]
               }
             ]
@@ -27,8 +39,20 @@
               {
                 "name": "flow-rate",
                 "sensors": [
-                  {"type": "flow-rate", "name": "flow-rate-1", "min": 0, "max": 100, "unit": "m/s"},
-                  {"type": "flow-rate", "name": "flow-rate-2", "min": 0, "max": 100, "unit": "m/s"}
+                  {
+                    "type": "flow-rate",
+                    "name": "flow-rate-1",
+                    "min": 0,
+                    "max": 100,
+                    "unit": "m/s",
+                  },
+                  {
+                    "type": "flow-rate",
+                    "name": "flow-rate-2",
+                    "min": 0,
+                    "max": 100,
+                    "unit": "m/s",
+                  }
                 ]
               }
             ]
@@ -44,8 +68,20 @@
               {
                 "name": "flow-rate",
                 "sensors": [
-                  {"type": "flow-rate", "name": "flow-rate-1", "min": 0, "max": 100, "unit": "m/s"},
-                  {"type": "flow-rate", "name": "flow-rate-2", "min": 0, "max": 100, "unit": "m/s"}
+                  {
+                    "type": "flow-rate",
+                    "name": "flow-rate-1",
+                    "min": 0,
+                    "max": 100,
+                    "unit": "m/s",
+                  },
+                  {
+                    "type": "flow-rate",
+                    "name": "flow-rate-2",
+                    "min": 0,
+                    "max": 100,
+                    "unit": "m/s",
+                  }
                 ]
               }
             ]
@@ -61,8 +97,20 @@
               {
                 "name": "flow-rate",
                 "sensors": [
-                  {"type": "flow-rate", "name": "flow-rate-1", "min": 0, "max": 100, "unit": "m/s"},
-                  {"type": "flow-rate", "name": "flow-rate-2", "min": 0, "max": 100, "unit": "m/s"}
+                  {
+                    "type": "flow-rate",
+                    "name": "flow-rate-1",
+                    "min": 0,
+                    "max": 100,
+                    "unit": "m/s",
+                  },
+                  {
+                    "type": "flow-rate",
+                    "name": "flow-rate-2",
+                    "min": 0,
+                    "max": 100,
+                    "unit": "m/s",
+                  }
                 ]
               }
             ]
