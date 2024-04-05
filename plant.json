@@ -10,20 +10,59 @@
               {
                 "name": "flow-rate",
                 "sensors": [
-                  {
-                    "type": "flow-rate",
-                    "name": "flow-rate-1",
-                    "min": 0,
-                    "max": 100,
-                    "unit": "m/s"
-                  },
-                  {
-                    "type": "flow-rate",
-                    "name": "flow-rate-2",
-                    "min": 0,
-                    "max": 100,
-                    "unit": "m/s"
-                  }
+                  {"type": "flow-rate", "name": "flow-rate-1", "min": 0, "max": 100, "unit": "m/s"},
+                  {"type": "flow-rate", "name": "flow-rate-2", "min": 0, "max": 100, "unit": "m/s"}
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "โครงการชลประทานบึงกาฬ",
+        "reservoirs": [
+          {
+            "name": "อ่างเก็บน้ำห้วยกำแพง",
+            "meters": [
+              {
+                "name": "flow-rate",
+                "sensors": [
+                  {"type": "flow-rate", "name": "flow-rate-1", "min": 0, "max": 100, "unit": "m/s"},
+                  {"type": "flow-rate", "name": "flow-rate-2", "min": 0, "max": 100, "unit": "m/s"}
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "โครงการชลประทานสุโขทัย",
+        "reservoirs": [
+          {
+            "name": "บ้านเกาะวงษ์เกียรติ์",
+            "meters": [
+              {
+                "name": "flow-rate",
+                "sensors": [
+                  {"type": "flow-rate", "name": "flow-rate-1", "min": 0, "max": 100, "unit": "m/s"},
+                  {"type": "flow-rate", "name": "flow-rate-2", "min": 0, "max": 100, "unit": "m/s"}
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "โครงการชลประทานเพชรบุรี",
+        "reservoirs": [
+          {
+            "name": "เขื่อนแก่งกระจาน",
+            "meters": [
+              {
+                "name": "flow-rate",
+                "sensors": [
+                  {"type": "flow-rate", "name": "flow-rate-1", "min": 0, "max": 100, "unit": "m/s"},
+                  {"type": "flow-rate", "name": "flow-rate-2", "min": 0, "max": 100, "unit": "m/s"}
                 ]
               }
             ]
