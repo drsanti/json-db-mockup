@@ -10,20 +10,42 @@
               {
                 "name": "flow-rate",
                 "sensors": [
-                  {
-                    "type": "flow-rate",
-                    "name": "flow-rate-1",
-                    "min": 0,
-                    "max": 100,
-                    "unit": "m/s",
-                  },
-                  {
-                    "type": "flow-rate",
-                    "name": "flow-rate-2",
-                    "min": 0,
-                    "max": 100,
-                    "unit": "m/s",
-                  }
+                  {"type": "flow-rate", "name": "flow-rate-1", "min": 0, "max": 100, "unit": "m/s"},
+                  {"type": "flow-rate", "name": "flow-rate-2", "min": 0, "max": 100, "unit": "m/s"}
+                  {"type": "flow-rate", "name": "flow-rate-3", "min": 0, "max": 100, "unit": "m/s"}
+                  {"type": "flow-rate", "name": "flow-rate-4", "min": 0, "max": 100, "unit": "m/s"}
+                ]
+              },
+              {
+                "name": "flow-speed",
+                "sensors": [
+                  {"type": "flow-speed", "name": "flow-speed-1", "min": 0, "max": 100, "unit": "m/s"},
+                  {"type": "flow-speed", "name": "flow-speed-2", "min": 0, "max": 100, "unit": "m/s"},
+                  {"type": "flow-speed", "name": "flow-speed-3", "min": 0, "max": 100, "unit": "m/s"}
+                ]
+              },
+              {
+                "name": "rainfall",
+                "sensors": [
+                  {"type": "rainfall", "name": "rainfall-1", "min": 0, "max": 100, "unit": "m/s"}
+                ]
+              },
+              {
+                "name": "gate-level",
+                "sensors": [
+                  {"type": "gate-level", "name": "gate-level-1", "min": 0, "max": 100, "unit": "cm"},
+                ]
+              },
+              {
+                "name": "upstream-level",
+                "sensors": [
+                  {"type": "upstream-level", "name": "gate-level-1", "min": 0, "max": 100, "unit": "cm"},
+                ]
+              },
+              {
+                "name": "downstream-level",
+                "sensors": [
+                  {"type": "downstream-level", "name": "gate-level-1", "min": 0, "max": 100, "unit": "cm"},
                 ]
               }
             ]
@@ -39,20 +61,8 @@
               {
                 "name": "flow-rate",
                 "sensors": [
-                  {
-                    "type": "flow-rate",
-                    "name": "flow-rate-1",
-                    "min": 0,
-                    "max": 100,
-                    "unit": "m/s",
-                  },
-                  {
-                    "type": "flow-rate",
-                    "name": "flow-rate-2",
-                    "min": 0,
-                    "max": 100,
-                    "unit": "m/s",
-                  }
+                  {"type": "flow-rate", "name": "flow-rate-1", "min": 0, "max": 100, "unit": "m/s"},
+                  {"type": "flow-rate", "name": "flow-rate-2", "min": 0, "max": 100, "unit": "m/s"}
                 ]
               }
             ]
@@ -68,20 +78,8 @@
               {
                 "name": "flow-rate",
                 "sensors": [
-                  {
-                    "type": "flow-rate",
-                    "name": "flow-rate-1",
-                    "min": 0,
-                    "max": 100,
-                    "unit": "m/s",
-                  },
-                  {
-                    "type": "flow-rate",
-                    "name": "flow-rate-2",
-                    "min": 0,
-                    "max": 100,
-                    "unit": "m/s",
-                  }
+                  {"type": "flow-rate", "name": "flow-rate-1", "min": 0, "max": 100, "unit": "m/s"},
+                  {"type": "flow-rate", "name": "flow-rate-2", "min": 0, "max": 100, "unit": "m/s"}
                 ]
               }
             ]
@@ -97,20 +95,8 @@
               {
                 "name": "flow-rate",
                 "sensors": [
-                  {
-                    "type": "flow-rate",
-                    "name": "flow-rate-1",
-                    "min": 0,
-                    "max": 100,
-                    "unit": "m/s",
-                  },
-                  {
-                    "type": "flow-rate",
-                    "name": "flow-rate-2",
-                    "min": 0,
-                    "max": 100,
-                    "unit": "m/s",
-                  }
+                  {"type": "flow-rate", "name": "flow-rate-1", "min": 0, "max": 100, "unit": "m/s"},
+                  {"type": "flow-rate", "name": "flow-rate-2", "min": 0, "max": 100, "unit": "m/s"}
                 ]
               }
             ]
