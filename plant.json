@@ -1,21 +1,21 @@
 [
   {
-    'projects': [
+    "projects": [
       {
-        'name': 'โครงการชลประทานตรัง',
-        'reservoirs': [
+        "name": "โครงการชลประทานตรัง",
+        "reservoirs": [
           {
-            'name': 'อ่างเก็บน้ำคลองท่างิ้ว',
-            'meters': [
+            "name": "อ่างเก็บน้ำคลองท่างิ้ว",
+            "meters": [
               {
-                'name': 'flow-rate',
-                'sensors': [
+                "name": "flow-rate",
+                "sensors": [
                   {
-                    'type': 'flow-rate',
-                    'name': 'flow-rate-1',
-                    'min': 0,
-                    'max': 100,
-                    'unit': 'm/s',
+                    "type": "flow-rate",
+                    "name": "flow-rate-1",
+                    "min": 0,
+                    "max": 100,
+                    "unit": "m/s",
                   }
                 ]
               }
