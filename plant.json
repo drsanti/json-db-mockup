@@ -12,8 +12,7 @@
                 "sensors": [
                   {"type": "flow-rate", "name": "flow-rate-1", "min": 0, "max": 100, "unit": "m/s"},
                   {"type": "flow-rate", "name": "flow-rate-2", "min": 0, "max": 100, "unit": "m/s"},
-                  {"type": "flow-rate", "name": "flow-rate-3", "min": 0, "max": 100, "unit": "m/s"},
-                  {"type": "flow-rate", "name": "flow-rate-4", "min": 0, "max": 100, "unit": "m/s"}
+                  {"type": "flow-rate", "name": "flow-rate-3", "min": 0, "max": 100, "unit": "m/s"}
                 ]
               },
               {
