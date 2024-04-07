@@ -1,0 +1,313 @@
+{
+    "id": "acs-flap",
+    "name": "acs-flap",
+    "title": null,
+    "desc": null,
+    "parent": null,
+    "projects": [
+        {
+            "id": "Trang",
+            "name": "Trang",
+            "title": "โครงการชลประทานตรัง",
+            "desc": null,
+            "parent": null,
+            "reservoirs": [
+                {
+                    "id": "klong-thangew",
+                    "name": "klong-thangew",
+                    "parent": null,
+                    "title": "อ่างเก็บน้ำคลองท่างิ้ว",
+                    "desc": null,
+                    "meters": [
+                        {
+                            "id": "water-level",
+                            "name": "water-level",
+                            "parent": "Trang",
+                            "sensors": [
+                                {
+                                    "id": "water-level-1",
+                                    "name": "water-level-1",
+                                    "min": 0.0,
+                                    "max": 100.0,
+                                    "parent": "water-level",
+                                    "unit": "ม.รทก.",
+                                    "title": "ระดับน้ำด้านหน้าฝาย",
+                                    "desc": null
+                                },
+                                {
+                                    "id": "water-level-1",
+                                    "name": "water-level-1",
+                                    "min": 0.0,
+                                    "max": 100.0,
+                                    "parent": "water-level",
+                                    "unit": "ม.รทก.",
+                                    "title": "ระดับน้ำด้านหลังฝาย",
+                                    "desc": null
+                                }
+                            ]
+                        },
+                        {
+                            "id": "flow-speed",
+                            "name": "flow-speed",
+                            "parent": null,
+                            "sensors": [
+                                {
+                                    "id": "flow-speed-1",
+                                    "name": "flow-speed-1",
+                                    "min": 0.0,
+                                    "max": 999.0,
+                                    "parent": "flow-speed",
+                                    "unit": "ม./วินาที",
+                                    "title": "อัตราเร็วกระแสน้ำ",
+                                    "desc": null
+                                }
+                            ]
+                        },
+                        {
+                            "id": "rainfall",
+                            "name": "rainfall",
+                            "parent": null,
+                            "sensors": [
+                                {
+                                    "id": "rainfall-1",
+                                    "name": "rainfall-1",
+                                    "min": 0.0,
+                                    "max": 999.0,
+                                    "parent": "rainfall",
+                                    "unit": "มม.",
+                                    "title": "ปริมาณน้ำฝน",
+                                    "desc": null
+                                }
+                            ]
+                        },
+                        {
+                            "id": "flow-rate",
+                            "name": "flow-rate",
+                            "parent": null,
+                            "sensors": [
+                                {
+                                    "id": "flow-rate-1",
+                                    "name": "flow-rate-1",
+                                    "min": 0.0,
+                                    "max": 999.0,
+                                    "parent": "flow-rate",
+                                    "unit": "ลบ.ม./วินาที",
+                                    "title": "ปริมาณน้ำฝน",
+                                    "desc": null
+                                },
+                                {
+                                    "id": "flow-rate-2",
+                                    "name": "flow-rate-2",
+                                    "min": 0.0,
+                                    "max": 999.0,
+                                    "parent": "flow-rate",
+                                    "unit": "ลบ.ม./วินาที",
+                                    "title": "ท่อระบายน้ำหลัก",
+                                    "desc": "(1500 มม.)"
+                                },
+                                {
+                                    "id": "flow-rate-3",
+                                    "name": "flow-rate-3",
+                                    "min": 0.0,
+                                    "max": 999.0,
+                                    "parent": "flow-rate",
+                                    "unit": "ลบ.ม./วินาที",
+                                    "title": "ท่อประปาส่วนภูมิภาค",
+                                    "desc": "(400 มม.)"
+                                },
+                                {
+                                    "id": "flow-rate-4",
+                                    "name": "flow-rate-4",
+                                    "min": 0.0,
+                                    "max": 999.0,
+                                    "parent": "flow-rate",
+                                    "unit": "ลบ.ม./วินาที",
+                                    "title": "ท่อใช้ภายในโครงการ",
+                                    "desc": "(200 มม.)"
+                                },
+                                {
+                                    "id": "flow-rate-5",
+                                    "name": "flow-rate-5",
+                                    "min": 0.0,
+                                    "max": 999.0,
+                                    "parent": "flow-rate",
+                                    "unit": "ลบ.ม./วินาที",
+                                    "title": "ท่อเกษตรกรรม",
+                                    "desc": "(1000 มม.)"
+                                },
+                                {
+                                    "id": "flow-rate-6",
+                                    "name": "flow-rate-6",
+                                    "min": 0.0,
+                                    "max": 999.0,
+                                    "parent": "flow-rate",
+                                    "unit": "ลบ.ม./วินาที",
+                                    "title": "ท่อประปาส่วนภูมิภาค",
+                                    "desc": "(500 มม.)"
+                                },
+                                {
+                                    "id": "flow-rate-7",
+                                    "name": "flow-rate-7",
+                                    "min": 0.0,
+                                    "max": 999.0,
+                                    "parent": "flow-rate",
+                                    "unit": "ลบ.ม./วินาที",
+                                    "title": "ท่อประปาเทศบาล",
+                                    "desc": "(200 มม.)"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "gate-level",
+                            "name": "gate-level",
+                            "parent": null,
+                            "sensors": [
+                                {
+                                    "id": "gate-level-1",
+                                    "name": "gate-level-1",
+                                    "min": 0.0,
+                                    "max": 100.0,
+                                    "parent": "gate-level",
+                                    "unit": "ซม.",
+                                    "title": "บานที่ 1",
+                                    "desc": null
+                                },
+                                {
+                                    "id": "gate-level-2",
+                                    "name": "gate-level-2",
+                                    "min": 0.0,
+                                    "max": 132.0,
+                                    "parent": "gate-level",
+                                    "unit": "ซม.",
+                                    "title": "บานที่ 2",
+                                    "desc": null
+                                },
+                                {
+                                    "id": "gate-level-3",
+                                    "name": "gate-level-3",
+                                    "min": 0.0,
+                                    "max": 132.0,
+                                    "parent": "gate-level",
+                                    "unit": "ซม.",
+                                    "title": "บานที่ 2",
+                                    "desc": null
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "bueng-kan",
+            "name": "bueng-kan",
+            "title": "โครงการชลประทานบึงกาฬ",
+            "desc": null,
+            "parent": null,
+            "reservoirs": [
+                {
+                    "id": "huai-kamphaeng",
+                    "name": "huai-kamphaeng",
+                    "parent": null,
+                    "title": "อ่างเก็บน้ำห้วยกำแพง",
+                    "desc": null,
+                    "meters": [
+                        {
+                            "id": "water-level",
+                            "name": "water-level",
+                            "parent": "BuengKan",
+                            "sensors": [
+                                {
+                                    "id": "water-level-1",
+                                    "name": "water-level-1",
+                                    "min": 0.0,
+                                    "max": 100.0,
+                                    "parent": "water-level",
+                                    "unit": "ม.รทก.",
+                                    "title": "ระดับน้ำด้านหน้าฝาย",
+                                    "desc": null
+                                },
+                                {
+                                    "id": "water-level-1",
+                                    "name": "water-level-1",
+                                    "min": 0.0,
+                                    "max": 100.0,
+                                    "parent": "water-level",
+                                    "unit": "ม.รทก.",
+                                    "title": "ระดับน้ำด้านหลังฝาย",
+                                    "desc": null
+                                }
+                            ]
+                        },
+                        {
+                            "id": "flow-speed",
+                            "name": "flow-speed",
+                            "parent": null,
+                            "sensors": [
+                                {
+                                    "id": "flow-speed-1",
+                                    "name": "flow-speed-1",
+                                    "min": 0.0,
+                                    "max": 999.0,
+                                    "parent": "flow-speed",
+                                    "unit": "ม./วินาที",
+                                    "title": "อัตราเร็วกระแสน้ำ",
+                                    "desc": null
+                                }
+                            ]
+                        },
+                        {
+                            "id": "rainfall",
+                            "name": "rainfall",
+                            "parent": null,
+                            "sensors": []
+                        },
+                        {
+                            "id": "flow-rate",
+                            "name": "flow-rate",
+                            "parent": null,
+                            "sensors": []
+                        },
+                        {
+                            "id": "gate-level",
+                            "name": "gate-level",
+                            "parent": null,
+                            "sensors": [
+                                {
+                                    "id": "gate-level-1",
+                                    "name": "gate-level-1",
+                                    "min": 0.0,
+                                    "max": 100.0,
+                                    "parent": "gate-level",
+                                    "unit": "ซม.",
+                                    "title": "บานที่ 1",
+                                    "desc": null
+                                },
+                                {
+                                    "id": "gate-level-2",
+                                    "name": "gate-level-2",
+                                    "min": 0.0,
+                                    "max": 132.0,
+                                    "parent": "gate-level",
+                                    "unit": "ซม.",
+                                    "title": "บานที่ 2",
+                                    "desc": null
+                                },
+                                {
+                                    "id": "gate-level-3",
+                                    "name": "gate-level-3",
+                                    "min": 0.0,
+                                    "max": 132.0,
+                                    "parent": "gate-level",
+                                    "unit": "ซม.",
+                                    "title": "บานที่ 2",
+                                    "desc": null
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
