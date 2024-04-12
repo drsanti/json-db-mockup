@@ -6,7 +6,7 @@
     "parent": null,
     "projects": [
         {
-            "id": "Trang",
+            "id": "trang",
             "name": "Trang",
             "title": "โครงการชลประทานตรัง",
             "desc": null,
@@ -15,30 +15,30 @@
                 {
                     "id": "klong-thangew",
                     "name": "klong-thangew",
-                    "parent": null,
+                    "parent": "trang",
                     "title": "อ่างเก็บน้ำคลองท่างิ้ว",
                     "desc": null,
                     "meters": [
                         {
                             "id": "water-level",
                             "name": "water-level",
-                            "parent": "Trang",
+                            "parent": "trang",
                             "sensors": [
                                 {
                                     "id": "water-level-1",
                                     "name": "water-level-1",
                                     "min": 0.0,
-                                    "max": 100.0,
+                                    "max": 999.99,
                                     "parent": "water-level",
                                     "unit": "ม.รทก.",
                                     "title": "ระดับน้ำด้านหน้าฝาย",
                                     "desc": null
                                 },
                                 {
-                                    "id": "water-level-1",
-                                    "name": "water-level-1",
+                                    "id": "water-level-2",
+                                    "name": "water-level-2",
                                     "min": 0.0,
-                                    "max": 100.0,
+                                    "max": 999.99,
                                     "parent": "water-level",
                                     "unit": "ม.รทก.",
                                     "title": "ระดับน้ำด้านหลังฝาย",
@@ -55,7 +55,7 @@
                                     "id": "flow-speed-1",
                                     "name": "flow-speed-1",
                                     "min": 0.0,
-                                    "max": 999.0,
+                                    "max": 99.99,
                                     "parent": "flow-speed",
                                     "unit": "ม./วินาที",
                                     "title": "อัตราเร็วกระแสน้ำ",
@@ -72,7 +72,7 @@
                                     "id": "rainfall-1",
                                     "name": "rainfall-1",
                                     "min": 0.0,
-                                    "max": 999.0,
+                                    "max": 999.9,
                                     "parent": "rainfall",
                                     "unit": "มม.",
                                     "title": "ปริมาณน้ำฝน",
@@ -89,7 +89,7 @@
                                     "id": "flow-rate-1",
                                     "name": "flow-rate-1",
                                     "min": 0.0,
-                                    "max": 999.0,
+                                    "max": 999.9,
                                     "parent": "flow-rate",
                                     "unit": "ลบ.ม./วินาที",
                                     "title": "ปริมาณน้ำฝน",
@@ -99,7 +99,7 @@
                                     "id": "flow-rate-2",
                                     "name": "flow-rate-2",
                                     "min": 0.0,
-                                    "max": 999.0,
+                                    "max": 999.9,
                                     "parent": "flow-rate",
                                     "unit": "ลบ.ม./วินาที",
                                     "title": "ท่อระบายน้ำหลัก",
@@ -109,7 +109,7 @@
                                     "id": "flow-rate-3",
                                     "name": "flow-rate-3",
                                     "min": 0.0,
-                                    "max": 999.0,
+                                    "max": 999.9,
                                     "parent": "flow-rate",
                                     "unit": "ลบ.ม./วินาที",
                                     "title": "ท่อประปาส่วนภูมิภาค",
@@ -119,7 +119,7 @@
                                     "id": "flow-rate-4",
                                     "name": "flow-rate-4",
                                     "min": 0.0,
-                                    "max": 999.0,
+                                    "max": 999.9,
                                     "parent": "flow-rate",
                                     "unit": "ลบ.ม./วินาที",
                                     "title": "ท่อใช้ภายในโครงการ",
@@ -129,7 +129,7 @@
                                     "id": "flow-rate-5",
                                     "name": "flow-rate-5",
                                     "min": 0.0,
-                                    "max": 999.0,
+                                    "max": 999.9,
                                     "parent": "flow-rate",
                                     "unit": "ลบ.ม./วินาที",
                                     "title": "ท่อเกษตรกรรม",
@@ -139,7 +139,7 @@
                                     "id": "flow-rate-6",
                                     "name": "flow-rate-6",
                                     "min": 0.0,
-                                    "max": 999.0,
+                                    "max": 999.9,
                                     "parent": "flow-rate",
                                     "unit": "ลบ.ม./วินาที",
                                     "title": "ท่อประปาส่วนภูมิภาค",
@@ -149,7 +149,7 @@
                                     "id": "flow-rate-7",
                                     "name": "flow-rate-7",
                                     "min": 0.0,
-                                    "max": 999.0,
+                                    "max": 999.9,
                                     "parent": "flow-rate",
                                     "unit": "ลบ.ม./วินาที",
                                     "title": "ท่อประปาเทศบาล",
@@ -194,13 +194,29 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "mqttConfig": {
+                        "host": "wss://acsflapgate.com",
+                        "port": 6030,
+                        "pubTopics": [
+                            "KTH/PLC/Data"
+                        ],
+                        "subTopics": [
+                            "KTH/APP/StartRemote",
+                            "KTH/APP/StopRemote",
+                            "KTH/APP/StartAutoDrop",
+                            "KTH/APP/StopAutoDrop",
+                            "KTH/APP/Lock",
+                            "KTH/APP/Unlock",
+                            "KTH/APP/ControlGate"
+                        ]
+                    }
                 }
             ]
         },
         {
             "id": "bueng-kan",
-            "name": "bueng-kan",
+            "name": "Bueng-Kan",
             "title": "โครงการชลประทานบึงกาฬ",
             "desc": null,
             "parent": null,
@@ -208,30 +224,30 @@
                 {
                     "id": "huai-kamphaeng",
                     "name": "huai-kamphaeng",
-                    "parent": null,
+                    "parent": "bueng-kan",
                     "title": "อ่างเก็บน้ำห้วยกำแพง",
                     "desc": null,
                     "meters": [
                         {
                             "id": "water-level",
                             "name": "water-level",
-                            "parent": "BuengKan",
+                            "parent": "bueng-kan",
                             "sensors": [
                                 {
                                     "id": "water-level-1",
                                     "name": "water-level-1",
                                     "min": 0.0,
-                                    "max": 100.0,
+                                    "max": 999.99,
                                     "parent": "water-level",
                                     "unit": "ม.รทก.",
                                     "title": "ระดับน้ำด้านหน้าฝาย",
                                     "desc": null
                                 },
                                 {
-                                    "id": "water-level-1",
-                                    "name": "water-level-1",
+                                    "id": "water-level-2",
+                                    "name": "water-level-2",
                                     "min": 0.0,
-                                    "max": 100.0,
+                                    "max": 999.99,
                                     "parent": "water-level",
                                     "unit": "ม.รทก.",
                                     "title": "ระดับน้ำด้านหลังฝาย",
@@ -243,18 +259,7 @@
                             "id": "flow-speed",
                             "name": "flow-speed",
                             "parent": null,
-                            "sensors": [
-                                {
-                                    "id": "flow-speed-1",
-                                    "name": "flow-speed-1",
-                                    "min": 0.0,
-                                    "max": 999.0,
-                                    "parent": "flow-speed",
-                                    "unit": "ม./วินาที",
-                                    "title": "อัตราเร็วกระแสน้ำ",
-                                    "desc": null
-                                }
-                            ]
+                            "sensors": []
                         },
                         {
                             "id": "rainfall",
@@ -277,6 +282,144 @@
                                     "id": "gate-level-1",
                                     "name": "gate-level-1",
                                     "min": 0.0,
+                                    "max": 250.0,
+                                    "parent": "gate-level",
+                                    "unit": "ซม.",
+                                    "title": "บานที่ 1",
+                                    "desc": null
+                                },
+                                {
+                                    "id": "gate-level-2",
+                                    "name": "gate-level-2",
+                                    "min": 0.0,
+                                    "max": 250.0,
+                                    "parent": "gate-level",
+                                    "unit": "ซม.",
+                                    "title": "บานที่ 2",
+                                    "desc": null
+                                },
+                                {
+                                    "id": "gate-level-3",
+                                    "name": "gate-level-3",
+                                    "min": 0.0,
+                                    "max": 250.0,
+                                    "parent": "gate-level",
+                                    "unit": "ซม.",
+                                    "title": "บานที่ 2",
+                                    "desc": null
+                                }
+                            ]
+                        }
+                    ],
+                    "mqttConfig": {
+                        "host": "wss://acsflapgate.com",
+                        "port": 6030,
+                        "pubTopics": [
+                            "HKP/PLC/Data"
+                        ],
+                        "subTopics": [
+                            "HKP/APP/StartRemote",
+                            "HKP/APP/StopRemote",
+                            "HKP/APP/StartAutoDrop",
+                            "HKP/APP/StopAutoDrop",
+                            "HKP/APP/Lock",
+                            "HKP/APP/Unlock",
+                            "HKP/APP/ControlGate"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "sukhothai",
+            "name": "Sukhothai",
+            "title": "โครงการชลประทานสุโขทัย",
+            "desc": null,
+            "parent": null,
+            "reservoirs": [
+                {
+                    "id": "koh-wongkiat",
+                    "name": "koh-wongkiat",
+                    "parent": "sukhothai",
+                    "title": "บ้านเกาะวงษ์เกียรติ์",
+                    "desc": null,
+                    "meters": [
+                        {
+                            "id": "water-level",
+                            "name": "water-level",
+                            "parent": "sukhothai",
+                            "sensors": [
+                                {
+                                    "id": "water-level-1",
+                                    "name": "water-level-1",
+                                    "min": 0.0,
+                                    "max": 999.99,
+                                    "parent": "water-level",
+                                    "unit": "ม.รทก.",
+                                    "title": "ระดับน้ำด้านหน้าฝาย",
+                                    "desc": null
+                                },
+                                {
+                                    "id": "water-level-2",
+                                    "name": "water-level-2",
+                                    "min": 0.0,
+                                    "max": 999.99,
+                                    "parent": "water-level",
+                                    "unit": "ม.รทก.",
+                                    "title": "ระดับน้ำด้านหลังฝาย",
+                                    "desc": null
+                                }
+                            ]
+                        },
+                        {
+                            "id": "flow-speed",
+                            "name": "flow-speed",
+                            "parent": null,
+                            "sensors": [
+                                {
+                                    "id": "flow-speed-1",
+                                    "name": "flow-speed-1",
+                                    "min": 0.0,
+                                    "max": 99.99,
+                                    "parent": "flow-speed",
+                                    "unit": "ม./วินาที",
+                                    "title": "อัตราเร็วกระแสน้ำ",
+                                    "desc": null
+                                }
+                            ]
+                        },
+                        {
+                            "id": "rainfall",
+                            "name": "rainfall",
+                            "parent": null,
+                            "sensors": []
+                        },
+                        {
+                            "id": "flow-rate",
+                            "name": "flow-rate",
+                            "parent": null,
+                            "sensors": [
+                                {
+                                    "id": "flow-rate-1",
+                                    "name": "flow-rate-1",
+                                    "min": 0.0,
+                                    "max": 999.9,
+                                    "parent": "flow-rate",
+                                    "unit": "ลบ.ม./วินาที",
+                                    "title": "ปริมาณน้ำฝน",
+                                    "desc": null
+                                }
+                            ]
+                        },
+                        {
+                            "id": "gate-level",
+                            "name": "gate-level",
+                            "parent": null,
+                            "sensors": [
+                                {
+                                    "id": "gate-level-1",
+                                    "name": "gate-level-1",
+                                    "min": 0.0,
                                     "max": 100.0,
                                     "parent": "gate-level",
                                     "unit": "ซม.",
@@ -287,7 +430,7 @@
                                     "id": "gate-level-2",
                                     "name": "gate-level-2",
                                     "min": 0.0,
-                                    "max": 132.0,
+                                    "max": 100.0,
                                     "parent": "gate-level",
                                     "unit": "ซม.",
                                     "title": "บานที่ 2",
@@ -297,7 +440,7 @@
                                     "id": "gate-level-3",
                                     "name": "gate-level-3",
                                     "min": 0.0,
-                                    "max": 132.0,
+                                    "max": 100.0,
                                     "parent": "gate-level",
                                     "unit": "ซม.",
                                     "title": "บานที่ 2",
@@ -305,7 +448,181 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "mqttConfig": {
+                        "host": "wss://acsflapgate.com",
+                        "port": 6030,
+                        "pubTopics": [
+                            "KWK/PLC/Data"
+                        ],
+                        "subTopics": [
+                            "KWK/APP/StartRemote",
+                            "KWK/APP/StopRemote",
+                            "KWK/APP/StartAutoDrop",
+                            "KWK/APP/StopAutoDrop",
+                            "KWK/APP/Lock",
+                            "KWK/APP/Unlock",
+                            "KWK/APP/ControlGate"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "phetchaburi",
+            "name": "Phetchaburi",
+            "title": "โครงการชลประทานเพชรบุรี",
+            "desc": null,
+            "parent": null,
+            "reservoirs": [
+                {
+                    "id": "kaeng-krachan",
+                    "name": "kaeng-krachan",
+                    "parent": "phetchaburi",
+                    "title": "อ่างเก็บน้ำแก่งกระจาน",
+                    "desc": null,
+                    "meters": [
+                        {
+                            "id": "water-level",
+                            "name": "water-level",
+                            "parent": "phetchaburi",
+                            "sensors": [
+                                {
+                                    "id": "water-level-1",
+                                    "name": "water-level-1",
+                                    "min": 0.0,
+                                    "max": 999.99,
+                                    "parent": "water-level",
+                                    "unit": "ม.รทก.",
+                                    "title": "ระดับน้ำด้านหน้าฝาย",
+                                    "desc": null
+                                },
+                                {
+                                    "id": "water-level-2",
+                                    "name": "water-level-2",
+                                    "min": 0.0,
+                                    "max": 999.99,
+                                    "parent": "water-level",
+                                    "unit": "ม.รทก.",
+                                    "title": "ระดับน้ำด้านหลังฝาย",
+                                    "desc": null
+                                }
+                            ]
+                        },
+                        {
+                            "id": "flow-speed",
+                            "name": "flow-speed",
+                            "parent": null,
+                            "sensors": [
+                                {
+                                    "id": "flow-speed-1",
+                                    "name": "flow-speed-1",
+                                    "min": 0.0,
+                                    "max": 99.99,
+                                    "parent": "flow-speed",
+                                    "unit": "ม./วินาที",
+                                    "title": "อัตราเร็วกระแสน้ำ",
+                                    "desc": null
+                                }
+                            ]
+                        },
+                        {
+                            "id": "rainfall",
+                            "name": "rainfall",
+                            "parent": null,
+                            "sensors": []
+                        },
+                        {
+                            "id": "flow-rate",
+                            "name": "flow-rate",
+                            "parent": null,
+                            "sensors": [
+                                {
+                                    "id": "flow-rate-1",
+                                    "name": "flow-rate-1",
+                                    "min": 0.0,
+                                    "max": 999.9,
+                                    "parent": "flow-rate",
+                                    "unit": "ลบ.ม./วินาที",
+                                    "title": "ปริมาณน้ำฝน",
+                                    "desc": null
+                                }
+                            ]
+                        },
+                        {
+                            "id": "gate-level",
+                            "name": "gate-level",
+                            "parent": null,
+                            "sensors": [
+                                {
+                                    "id": "gate-level-1",
+                                    "name": "gate-level-1",
+                                    "min": 0.0,
+                                    "max": 100.0,
+                                    "parent": "gate-level",
+                                    "unit": "ซม.",
+                                    "title": "บานที่ 1",
+                                    "desc": null
+                                },
+                                {
+                                    "id": "gate-level-2",
+                                    "name": "gate-level-2",
+                                    "min": 0.0,
+                                    "max": 100.0,
+                                    "parent": "gate-level",
+                                    "unit": "ซม.",
+                                    "title": "บานที่ 2",
+                                    "desc": null
+                                },
+                                {
+                                    "id": "gate-level-3",
+                                    "name": "gate-level-3",
+                                    "min": 0.0,
+                                    "max": 100.0,
+                                    "parent": "gate-level",
+                                    "unit": "ซม.",
+                                    "title": "บานที่ 2",
+                                    "desc": null
+                                },
+                                {
+                                    "id": "gate-level-4",
+                                    "name": "gate-level-4",
+                                    "min": 0.0,
+                                    "max": 100.0,
+                                    "parent": "gate-level",
+                                    "unit": "ซม.",
+                                    "title": "บานที่ 2",
+                                    "desc": null
+                                },
+                                {
+                                    "id": "gate-level-5",
+                                    "name": "gate-level-5",
+                                    "min": 0.0,
+                                    "max": 100.0,
+                                    "parent": "gate-level",
+                                    "unit": "ซม.",
+                                    "title": "บานที่ 2",
+                                    "desc": null
+                                }
+                            ]
+                        }
+                    ],
+                    "mqttConfig": {
+                        "host": "wss://acsflapgate.com",
+                        "port": 6030,
+                        "pubTopics": [
+                            "KKJ/PLC/Data"
+                        ],
+                        "subTopics": [
+                            "KKJ/APP/StartRemote",
+                            "KKJ/APP/StopRemote",
+                            "KKJ/APP/StartAutoDrop",
+                            "KKJ/APP/StopAutoDrop",
+                            "KKJ/APP/Lock",
+                            "KKJ/APP/Unlock",
+                            "KKJ/APP/ControlGate"
+                        ]
+                    }
                 }
             ]
         }
